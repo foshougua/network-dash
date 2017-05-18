@@ -1,0 +1,105 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddIdleThread	MyThreadPool.cpp	/^void  MyThreadPool::AddIdleThread(int n)$/;"	f	class:MyThreadPool
+AddTask	MyThreadPool.cpp	/^void MyThreadPool::AddTask(Task *Task, int priority = (PRIORITY::NORMAL))$/;"	f	class:MyThreadPool
+Assign	MyThread.cpp	/^void MyThread::Assign(Task *t)$/;"	f	class:MyThread
+BusyThreadContainer	BusyThreadContainer.cpp	/^BusyThreadContainer::BusyThreadContainer()$/;"	f	class:BusyThreadContainer
+BusyThreadContainer	BusyThreadContainer.h	/^class BusyThreadContainer$/;"	c
+Close	File.cpp	/^void File::Close()$/;"	f	class:File
+Container	BusyThreadContainer.h	/^	typedef std::list<MyThread*> Container;$/;"	t	class:BusyThreadContainer
+Container	IdleThreadContainer.h	/^	typedef std::vector<MyThread*> Container;$/;"	t	class:IdleThreadContainer
+EndMyThreadPool	MyThreadPool.cpp	/^void MyThreadPool::EndMyThreadPool()$/;"	f	class:MyThreadPool
+File	File.cpp	/^File::File(const std::string &fileName)$/;"	f	class:File
+File	File.h	/^class File$/;"	c
+File	MyTask.h	/^class File$/;"	c
+IdleThreadContainer	IdleThreadContainer.cpp	/^IdleThreadContainer::IdleThreadContainer()$/;"	f	class:IdleThreadContainer
+IdleThreadContainer	IdleThreadContainer.h	/^class IdleThreadContainer$/;"	c
+Iterator	BusyThreadContainer.h	/^	typedef Container::iterator Iterator;$/;"	t	class:BusyThreadContainer
+Iterator	IdleThreadContainer.h	/^	typedef Container::iterator Iterator;$/;"	t	class:IdleThreadContainer
+MAX	Task.h	/^		MIN = 1, NORMAL = 25, MAX = 50$/;"	e	enum:__anon1::PRIORITY
+MIN	Task.h	/^		MIN = 1, NORMAL = 25, MAX = 50$/;"	e	enum:__anon1::PRIORITY
+MyTask	MyTask.h	/^    MyTask(int id, File *file1):blockID(id)$/;"	f	class:MyTask
+MyTask	MyTask.h	/^class MyTask : public Task$/;"	c
+MyThread	MyThread.cpp	/^MyThread::MyThread(MyThreadPool *pool):mythreadpool_(pool), isdetach_(true)$/;"	f	class:MyThread
+MyThread	MyThread.h	/^class MyThread$/;"	c
+MyThreadPool	MyThreadPool.cpp	/^MyThreadPool::MyThreadPool(int number)$/;"	f	class:MyThreadPool
+MyThreadPool	MyThreadPool.h	/^class MyThreadPool$/;"	c
+NORMAL	Task.h	/^		MIN = 1, NORMAL = 25, MAX = 50$/;"	e	enum:__anon1::PRIORITY
+PRIORITY	Task.h	/^	enum  PRIORITY$/;"	g	namespace:__anon1
+RemoveThreadFromBusy	MyThreadPool.cpp	/^void MyThreadPool::RemoveThreadFromBusy(MyThread *myThread)$/;"	f	class:MyThreadPool
+Run	MyTask.cpp	/^void MyTask::Run()$/;"	f	class:MyTask
+Run	MyThread.cpp	/^void MyThread::Run()$/;"	f	class:MyThread
+SetPriority	Task.h	/^	void SetPriority(int priority)$/;"	f	class:Task
+Start	MyThreadPool.cpp	/^void MyThreadPool::Start()$/;"	f	class:MyThreadPool
+StartThread	MyThread.cpp	/^void MyThread::StartThread()$/;"	f	class:MyThread
+Task	Task.h	/^	Task()$/;"	f	class:Task
+Task	Task.h	/^class Task$/;"	c
+TaskContainer	TaskContainer.cpp	/^TaskContainer::TaskContainer()$/;"	f	class:TaskContainer
+TaskContainer	TaskContainer.h	/^class TaskContainer$/;"	c
+_BUSYTHREADCONTAINER_H	BusyThreadContainer.h	9;"	d
+_FILE_H	File.h	9;"	d
+_IDLETHREADCONTAINER_H	IdleThreadContainer.h	9;"	d
+_MYTASK_H	MyTask.h	9;"	d
+_MYTHREADPOOL_H	MyThreadPool.h	9;"	d
+_MYTHREAD_H	MyThread.h	9;"	d
+_TASKCONTAINER_H	TaskContainer.h	9;"	d
+_TASK_H	Task.h	9;"	d
+assign	IdleThreadContainer.cpp	/^void IdleThreadContainer::assign(int number, MyThreadPool *m)$/;"	f	class:IdleThreadContainer
+blockID	MyTask.h	/^    int blockID;$/;"	m	class:MyTask
+blockNum	File.h	/^    int blockNum;$/;"	m	class:File
+blockNum	MyTask.h	/^    int blockNum;$/;"	m	class:File
+busy_mutex_	MyThreadPool.h	/^	std::mutex busy_mutex_;$/;"	m	class:MyThreadPool
+busy_thread_container_	BusyThreadContainer.h	/^	std::list<MyThread*> busy_thread_container_;$/;"	m	class:BusyThreadContainer
+busy_thread_container_	MyThreadPool.h	/^	BusyThreadContainer busy_thread_container_;$/;"	m	class:MyThreadPool
+erase	BusyThreadContainer.cpp	/^void  BusyThreadContainer::erase(MyThread *m)$/;"	f	class:BusyThreadContainer
+erase	IdleThreadContainer.cpp	/^void IdleThreadContainer::erase(MyThread *m)$/;"	f	class:IdleThreadContainer
+file	File.h	/^    fstream file;$/;"	m	class:File
+file	MyTask.h	/^    File *file;$/;"	m	class:MyTask
+file	MyTask.h	/^    fstream file;$/;"	m	class:File
+fileSize	File.h	/^    long fileSize;$/;"	m	class:File
+fileSize	MyTask.h	/^    long fileSize;$/;"	m	class:File
+getBlockNum	File.cpp	/^int File::getBlockNum()$/;"	f	class:File
+getFilestream	File.cpp	/^const fstream & File::getFilestream()$/;"	f	class:File
+getthreadid	MyThread.cpp	/^int MyThread::getthreadid()$/;"	f	class:MyThread
+idle_mutex_	MyThreadPool.h	/^	std::mutex idle_mutex_;$/;"	m	class:MyThreadPool
+idle_thread_container_	IdleThreadContainer.h	/^	std::vector<MyThread*> idle_thread_container_;$/;"	m	class:IdleThreadContainer
+idle_thread_container_	MyThreadPool.h	/^	IdleThreadContainer idle_thread_container_;$/;"	m	class:MyThreadPool
+isdetach_	MyThread.h	/^	bool isdetach_;$/;"	m	class:MyThread
+issurvive_	MyThreadPool.h	/^	bool issurvive_;$/;"	m	class:MyThreadPool
+main	main.cpp	/^int main()$/;"	f
+mythreadpool_	MyThread.h	/^	MyThreadPool *mythreadpool_; \/\/指向关联的线程池$/;"	m	class:MyThread
+number_of_thread_	MyThreadPool.h	/^	int number_of_thread_;$/;"	m	class:MyThreadPool
+operator !=	MyThread.cpp	/^bool operator!=(MyThread my1, MyThread my2)$/;"	f
+operator ==	MyThread.cpp	/^bool operator==(MyThread my1, MyThread my2)$/;"	f
+pop	IdleThreadContainer.cpp	/^void IdleThreadContainer::pop()$/;"	f	class:IdleThreadContainer
+pop	TaskContainer.cpp	/^void TaskContainer::pop()$/;"	f	class:TaskContainer
+priority_	Task.h	/^	int priority_;$/;"	m	class:Task
+push	BusyThreadContainer.cpp	/^void BusyThreadContainer::push(MyThread *m)$/;"	f	class:BusyThreadContainer
+push	IdleThreadContainer.cpp	/^void IdleThreadContainer::push(MyThread *m)$/;"	f	class:IdleThreadContainer
+push	TaskContainer.cpp	/^void TaskContainer::push(Task* t)$/;"	f	class:TaskContainer
+s_threadnumber	MyThread.cpp	/^int MyThread::s_threadnumber = 0;$/;"	m	class:MyThread	file:
+s_threadnumber	MyThread.h	/^	static int  s_threadnumber;  $/;"	m	class:MyThread
+setisdetach	MyThread.cpp	/^void MyThread::setisdetach(bool detach)$/;"	f	class:MyThread
+size	BusyThreadContainer.cpp	/^std::list<MyThread*>::size_type BusyThreadContainer::size()$/;"	f	class:BusyThreadContainer
+size	IdleThreadContainer.cpp	/^std::vector<MyThread*>::size_type IdleThreadContainer::size()$/;"	f	class:IdleThreadContainer
+size	TaskContainer.cpp	/^std::priority_queue<Task*>::size_type  TaskContainer::size()$/;"	f	class:TaskContainer
+task_	MyThread.h	/^	Task *task_;                \/\/关联的任务$/;"	m	class:MyThread
+task_container_	MyThreadPool.h	/^	TaskContainer task_container_;$/;"	m	class:MyThreadPool
+task_container_	TaskContainer.h	/^	std::priority_queue<Task*> task_container_;$/;"	m	class:TaskContainer
+task_mutex_	MyThreadPool.h	/^	std::mutex task_mutex_;$/;"	m	class:MyThreadPool
+thread_	MyThread.h	/^    std::thread thread_;$/;"	m	class:MyThread
+thread_this_	MyThreadPool.h	/^	std::thread thread_this_;     \/\/线程池运行线程$/;"	m	class:MyThreadPool
+threadid_	MyThread.h	/^	int threadid_;              \/\/线程id$/;"	m	class:MyThread
+top	IdleThreadContainer.cpp	/^MyThread* IdleThreadContainer::top()$/;"	f	class:IdleThreadContainer
+top	TaskContainer.cpp	/^Task* TaskContainer::top()$/;"	f	class:TaskContainer
+~BusyThreadContainer	BusyThreadContainer.cpp	/^BusyThreadContainer::~BusyThreadContainer()$/;"	f	class:BusyThreadContainer
+~File	File.h	/^    ~File()$/;"	f	class:File
+~File	MyTask.h	/^    ~File()$/;"	f	class:File
+~IdleThreadContainer	IdleThreadContainer.cpp	/^IdleThreadContainer::~IdleThreadContainer()$/;"	f	class:IdleThreadContainer
+~MyTask	MyTask.h	/^    ~MyTask()$/;"	f	class:MyTask
+~MyThreadPool	MyThreadPool.cpp	/^MyThreadPool::~MyThreadPool()$/;"	f	class:MyThreadPool
+~TaskContainer	TaskContainer.cpp	/^TaskContainer::~TaskContainer()$/;"	f	class:TaskContainer
